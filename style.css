@@ -266,3 +266,28 @@ body {
 .incorrect-feedback {
     background-color: var(--color-incorrect);
 }
+
+/* --- Mobile Optimization Fixes --- */
+@media (max-width: 450px) {
+    /* Adjusts the main title font size on smaller phones */
+    .navbar .title {
+        font-size: 1.2em; /* Smaller font size to fit on one line */
+    }
+
+    /* Makes the entire navbar flexible to prevent horizontal scrolling */
+    .navbar {
+        flex-wrap: nowrap;
+        justify-content: space-around; /* Better centering on small screens */
+    }
+
+    /* Shrink the answer buttons slightly to save space */
+    .answer-btn {
+        padding: 12px;
+        font-size: 1.0em;
+    }
+
+    /* Shrink the timer text slightly */
+    #timer-display {
+        font-size: 1.5em;
+    }
+}
