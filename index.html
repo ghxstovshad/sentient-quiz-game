@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentientAGI True or False Blitz</title>
+    
+<link rel="icon" type="image/jpeg" href="favicon.jpg"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        
+<img src="favicon.jpg" alt="SentientAGI Logo" class="navbar-logo">
+        <span class="title">SentientAGI Fact-Check Blitz</span>
+    </div>
+
+    <div class="container">
+        
+        <div class="controls">
+            <p id="question-count">Question: 0 / 10</p>
+            <h2 id="timer-display">Time: 0.0s</h2>
+        </div>
+
+        <div id="game-area">
+            
+            <div id="statement-card">
+                
+<img id="feedback-mascot" src="" alt="Feedback Mascot" class="feedback-mascot hidden">
+                <p class="game-message" id="message-display">Click Start to begin the Blitz!</p>
+                <h3 id="statement-text"></h3>
+            </div>
+
+            <div id="answer-buttons" class="hidden">
+                <button id="true-button" class="answer-btn true-btn">TRUE</button>
+                <button id="false-button" class="answer-btn false-btn">FALSE</button>
+            </div>
+            
+            <button id="start-button" class="control-btn">Start Game</button>
+            <button id="reset-button" class="control-btn hidden">Play Again</button>
+
+            <div id="final-score" class="hidden">
+                <h3>Quiz Complete!</h3>
+                <p id="final-time"></p>
+                <p id="final-feedback"></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        A project for SentientAGI
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
