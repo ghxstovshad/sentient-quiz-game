@@ -2,95 +2,95 @@
 // Structure: { statement: "The statement to display", isCorrect: boolean }
 const SENTIENT_TF_DATA = [
     // TRUE Statements (Based on whitepaper/website)
-    { 
-        statement: "Sentient's primary mission is to ensure Artificial General Intelligence (AGI) is open-source and not controlled by a single entity.", 
-        isCorrect: true 
+    {
+        statement: "Sentient's primary mission is to ensure Artificial General Intelligence (AGI) is open-source and not controlled by a single entity.",
+        isCorrect: true
     },
-    { 
-        statement: "The GRID is the largest open intelligence network where 100+ models, agents, and tools operate as one unified system.", 
-        isCorrect: true 
+    {
+        statement: "The GRID is the largest open intelligence network where 100+ models, agents, and tools operate as one unified system.",
+        isCorrect: true
     },
-    { 
-        statement: "ROMA is an open-source framework for multi-agent systems that splits big goals into subtasks for long-horizon reasoning.", 
-        isCorrect: true 
+    {
+        statement: "ROMA is an open-source framework for multi-agent systems that splits big goals into subtasks for long-horizon reasoning.",
+        isCorrect: true
     },
-    { 
-        statement: "Dobby is the world's first fingerprinted AI model, explicitly aligned with pro-crypto and pro-freedom values.", 
-        isCorrect: true 
+    {
+        statement: "Dobby is the world's first fingerprinted AI model, explicitly aligned with pro-crypto and pro-freedom values.",
+        isCorrect: true
     },
-    { 
-        statement: "Fingerprinting refers to a cryptographic library that embeds undetectable, verifiable signatures into AI models for ownership tracking.", 
-        isCorrect: true 
+    {
+        statement: "Fingerprinting refers to a cryptographic library that embeds undetectable, verifiable signatures into AI models for ownership tracking.",
+        isCorrect: true
     },
-    { 
-        statement: "The Open Deep Search tool utilizes reasoning agents and a novel search component to augment open-source LLMs.", 
-        isCorrect: true 
+    {
+        statement: "The Open Deep Search tool utilizes reasoning agents and a novel search component to augment open-source LLMs.",
+        isCorrect: true
     },
-    { 
-        statement: "Sentient Chat is an open AI platform for users to experience GRID artifacts, try open-source repos, and give feedback.", 
-        isCorrect: true 
+    {
+        statement: "Sentient Chat is an open AI platform for users to experience GRID artifacts, try open-source repos, and give feedback.",
+        isCorrect: true
     },
-    { 
-        statement: "Sentient believes that releasing all breakthroughs open-source proves that openness will outpace closed labs at every step.", 
-        isCorrect: true 
+    {
+        statement: "Sentient believes that releasing all breakthroughs open-source proves that openness will outpace closed labs at every step.",
+        isCorrect: true
     },
-    { 
-        statement: "Key research areas for the Sentient team include Agentic safety, post-training, and model security.", 
-        isCorrect: true 
+    {
+        statement: "Key research areas for the Sentient team include Agentic safety, post-training, and model security.",
+        isCorrect: true
     },
-    { 
-        statement: "Sentient's custom Benchmarks cover specific domains like fair coding, crypto values, and governance.", 
-        isCorrect: true 
+    {
+        statement: "Sentient's custom Benchmarks cover specific domains like fair coding, crypto values, and governance.",
+        isCorrect: true
     },
 
     // FALSE Statements (Incorrect facts based on whitepaper/website)
-    { 
-        statement: "Sentient's primary mission is to solely build and monetize a highly performant, proprietary Large Language Model (LLM).", 
-        isCorrect: false 
+    {
+        statement: "Sentient's primary mission is to solely build and monetize a highly performant, proprietary Large Language Model (LLM).",
+        isCorrect: false
     },
-    { 
-        statement: "The GRID is a custom hardware accelerator developed by Sentient to speed up model training.", 
-        isCorrect: false 
+    {
+        statement: "The GRID is a custom hardware accelerator developed by Sentient to speed up model training.",
+        isCorrect: false
     },
-    { 
-        statement: "ROMA is the name of the blockchain token used to fund the Sentient ecosystem.", 
-        isCorrect: false 
+    {
+        statement: "ROMA is the name of the blockchain token used to fund the Sentient ecosystem.",
+        isCorrect: false
     },
-    { 
-        statement: "Dobby is a closed-source model that requires a subscription for commercial use.", 
-        isCorrect: false 
+    {
+        statement: "Dobby is a closed-source model that requires a subscription for commercial use.",
+        isCorrect: false
     },
-    { 
-        statement: "Fingerprinting is a new form of biometric security used to restrict network access.", 
-        isCorrect: false 
+    {
+        statement: "Fingerprinting is a new form of biometric security used to restrict network access.",
+        isCorrect: false
     },
-    { 
-        statement: "The Open Deep Search relies on a proprietary, centralized database of indexed web content to find answers.", 
-        isCorrect: false 
+    {
+        statement: "The Open Deep Search relies on a proprietary, centralized database of indexed web content to find answers.",
+        isCorrect: false
     },
-    { 
-        statement: "Sentient Chat is exclusively a private, encrypted channel for the core developer team.", 
-        isCorrect: false 
+    {
+        statement: "Sentient Chat is exclusively a private, encrypted channel for the core developer team.",
+        isCorrect: false
     },
-    { 
-        statement: "Sentient argues that the decentralized approach is slower but safer than development by closed labs.", 
-        isCorrect: false 
+    {
+        statement: "Sentient argues that the decentralized approach is slower but safer than development by closed labs.",
+        isCorrect: false
     },
-    { 
-        statement: "Key research areas for the Sentient team include fusion energy and quantum computing hardware.", 
-        isCorrect: false 
+    {
+        statement: "Key research areas for the Sentient team include fusion energy and quantum computing hardware.",
+        isCorrect: false
     },
-    { 
-        statement: "Sentient's Benchmarks focus only on speed and computational efficiency, ignoring ethical alignment.", 
-        isCorrect: false 
+    {
+        statement: "Sentient's Benchmarks focus only on speed and computational efficiency, ignoring ethical alignment.",
+        isCorrect: false
     }
 ];
 
 // --- Image Paths for Mascots ---
 // UPDATED: new-image is the crying mascot (Incorrect)
-const INCORRECT_MASCOT_IMAGE = 'new-image.jpg'; 
+const INCORRECT_MASCOT_IMAGE = 'new-image.jpg';
 // UPDATED: my-image is the happy/thumbs up mascot (Correct)
-const CORRECT_MASCOT_IMAGE = 'my-image.jpg'; 
+const CORRECT_MASCOT_IMAGE = 'my-image.jpg';
 
 // --- DOM Elements ---
 const statementText = document.getElementById('statement-text');
@@ -106,10 +106,10 @@ const finalScoreDiv = document.getElementById('final-score');
 const finalTimeDisplay = document.getElementById('final-time');
 const finalFeedbackDisplay = document.getElementById('final-feedback');
 const statementCard = document.getElementById('statement-card');
-const feedbackMascot = document.getElementById('feedback-mascot'); 
+const feedbackMascot = document.getElementById('feedback-mascot');
 
 // --- Game State Variables ---
-let currentQuiz = []; 
+let currentQuiz = [];
 let currentQuestionIndex = 0;
 let startTime = 0;
 let timerInterval;
@@ -129,7 +129,7 @@ function shuffleArray(array) {
 function generateQuiz() {
     const trueStatements = SENTIENT_TF_DATA.filter(q => q.isCorrect === true);
     const falseStatements = SENTIENT_TF_DATA.filter(q => q.isCorrect === false);
-    
+
     const shuffledTrue = shuffleArray(trueStatements).slice(0, 5);
     const shuffledFalse = shuffleArray(falseStatements).slice(0, 5);
 
@@ -144,21 +144,21 @@ function generateQuiz() {
  */
 function startGame() {
     if (isGameActive) return;
-    
+
     // Reset state
     currentQuiz = generateQuiz();
     currentQuestionIndex = 0;
     isGameActive = true;
-    
+
     // UI setup
     startButton.classList.add('hidden');
     resetButton.classList.add('hidden');
     finalScoreDiv.classList.add('hidden');
     answerButtonsDiv.classList.remove('hidden');
     statementCard.classList.remove('correct-feedback', 'incorrect-feedback');
-    feedbackMascot.classList.add('hidden'); 
+    feedbackMascot.classList.add('hidden');
     messageDisplay.textContent = "Answer quickly to secure a fast time!";
-    statementText.textContent = ""; 
+    statementText.textContent = "";
 
     // Start Timer
     startTime = Date.now();
@@ -180,7 +180,7 @@ function loadNextQuestion() {
     const question = currentQuiz[currentQuestionIndex];
     statementText.textContent = question.statement;
     questionCountDisplay.textContent = `Question: ${currentQuestionIndex + 1} / ${MAX_QUESTIONS}`;
-    
+
     // Re-enable buttons and clear card feedback and hide mascot
     trueButton.disabled = false;
     falseButton.disabled = false;
@@ -214,7 +214,7 @@ function handleAnswer(userGuess) {
         messageDisplay.textContent = "❌ Incorrect! Check the whitepaper!";
         feedbackMascot.src = INCORRECT_MASCOT_IMAGE;
     }
-    
+
     feedbackMascot.classList.remove('hidden');
     feedbackMascot.classList.add('visible');
 
@@ -227,7 +227,7 @@ function handleAnswer(userGuess) {
         } else {
             endGame();
         }
-    }, 1200); 
+    }, 1200);
 }
 
 /**
@@ -241,7 +241,7 @@ function endGame() {
     messageDisplay.textContent = "Quiz finished!";
     resetButton.classList.remove('hidden');
     finalScoreDiv.classList.remove('hidden');
-    feedbackMascot.classList.add('hidden'); 
+    feedbackMascot.classList.add('hidden');
 
     const finalTimeSeconds = (Date.now() - startTime) / 1000;
     finalTimeDisplay.textContent = `Total Time: ${finalTimeSeconds.toFixed(2)}s`;
@@ -278,5 +278,5 @@ falseButton.addEventListener('click', () => handleAnswer(false));
 document.addEventListener('DOMContentLoaded', () => {
     questionCountDisplay.textContent = `Question: 0 / ${MAX_QUESTIONS}`;
     timerDisplay.textContent = "Time: 0.0s";
-    feedbackMascot.classList.add('hidden'); 
+    feedbackMascot.classList.add('hidden');
 });

@@ -52,7 +52,7 @@ body {
     display: flex;
     align-items: center;
     /* Changed to space-between to push logo left, title center */
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 0 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -139,7 +139,7 @@ body {
     font-weight: 600;
     color: var(--dark-text);
     /* Ensure text is above mascot if it's full size */
-    z-index: 2; 
+    z-index: 2;
     position: relative;
 }
 
